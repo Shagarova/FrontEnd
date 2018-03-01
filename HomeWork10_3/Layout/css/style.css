@@ -1,0 +1,107 @@
+.wrapper{
+	width: 600px;
+	margin:50px auto;
+	padding:100px;
+	border:1px solid black;
+}
+input{
+	display:block;
+	margin-bottom:30px;
+	height: 40px;
+}
+
+input[type="checkbox"],
+input[type="button"]{
+	display:inline;
+/*float: left;*/
+	margin-bottom:30px;
+}
+label{
+	line-height: 30px;
+		/*float: left;*/
+	min-height: 30px;
+	margin-bottom:10px;
+}
+
+.modal{
+	width:350px;
+	height: 40px;
+	box-sizing: border-box;
+	/*padding: 5px 0;*/
+	text-align: center;
+	position: fixed;
+	background:#fff;
+	/*box-shadow:3px 3px 3px rgb(0,0,0);*/
+	border:1px solid black;
+	
+}
+.modal.Success{
+	z-index: 5;
+	border:1px solid black;
+	/*padding: 50px;*/
+	color: darkgreen;
+	font-size: 25px;
+	top:40%;
+	left:50%;
+}
+
+.modal.ErrorUserName{
+	z-index:10;
+	color:red;
+	/*padding: 5px;*/
+	top:15%;
+	left:45%;
+}
+.modal.ErrorPassword{
+	color:red;
+	/*padding: 5px;*/
+	top:32%;
+	left:45%;
+}
+.modal.ErrorPasswordTwo{
+	color:red;
+	/*padding: 5px;*/
+	top:32%;
+	left:45%;
+}
+.modal.ErrorRepeatPassword{
+	color:red;
+	/*padding: 5px;*/
+	top:40%;
+	left:45%;
+}
+.modal.ErrorRepeatPasswordEmpty{
+	color:red;
+	/*padding: 20px;*/
+	top:40%;
+	left:45%;
+}
+
+.modal.ErrorEmail{
+	color:red;
+	/*padding:5px;*/
+	top:25%;
+	left:45%;
+}
+.modal.ErrorEmailTwo{
+	color:red;
+	/*padding: 5px;*/
+	top:25%;
+	left:45%;
+}
+
+.modal.ErrorValue{
+	color:red;
+	/*padding: 5px;*/
+	top:45%;
+	left:45%;
+}
+
+.checkRegistration {
+	display: block;
+	background: green;
+	width: 000px;
+	height: 130px;
+	transition: .5s;
+}
+

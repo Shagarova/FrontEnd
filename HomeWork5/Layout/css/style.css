@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('../fonts/Century-Gothic-Regular/Century-Gothic-Regular.eot?') format('eot'), url('../fonts/Century-Gothic-Regular/Century-Gothic-Regular.woff2') format('woff2'), url('../fonts/Century-Gothic-Regular/Century-Gothic-Regular.woff') format('woff'), url('../fonts/Century-Gothic-Regular/Century-Gothic-Regular.ttf') format('truetype'), url('../fonts/Century-Gothic-Regular/Century-Gothic-Regular.svg#CenturyGothic') format('svg');
+}
+@font-face {
+    font-family: 'CodeLight';
+    src: url('../fonts/Code-Light/code_light-webfont.eot?') format('eot'), url('../fonts/Code-Light/code_light-webfont.woff2') format('woff2'), url('../fonts/Code-Light/code_light-webfont.woff') format('woff'), url('../fonts/Code-Light/code_light-webfont.ttf') format('truetype'), url('../fonts/Code-Light/code_light-webfont.svg#CodeLight') format('svg');
+}
+/*body {*/
+/*    font-family: CenturyGothic, 'Arial', 'Verdana', serif;
+    font-size: 14px;
+    background: #fff;
+}
+.accordeon{
+    width: 700px;
+    border:1px solid #DCDCDC;
+}
+.menu{
+
+}
+
+.menu__item{
+padding-left: 20px;
+padding-top:15px;
+padding-bottom: 15px;
+    border:0.2px solid #DCDCDC;
+     box-sizing: border-box;
+}
+
+.menu__link{
+    text-decoration: none;
+    color:black;
+    font-size:18px;
+}
+
+.menu__item>.menu__item__open{
+    display: none;
+}
+
+
+.menu__item__open__item{
+    font-size:12px;
+    font-style:italic;
+    padding-left: 20px;
+padding-top:40px;
+padding-bottom: 40px;
+border-top:1px solid blackd;
+}*/
+
+
+
+.accordeon .menu{
+ 
+    background-color: #f6f6f6;
+    width: 40%;
+    margin:0 auto;
+    border-radius: 12px;
+    list-style-type: none;
+}
+.menu__item{ 
+border:1px solid black;   
+padding:20px 0px 0px 0px;
+    
+}
+.manu__item:active,
+.menu__item:hover{
+    background-color: #48D1CC;
+
+}
+
+
+.menu__link{
+    font-size: 18px;
+    color: #3a3a3a;
+    padding-left:20px;
+    padding-bottom:20px;
+
+}
+.menu__open{
+    display: none;
+  /* margin-top:20px;*/
+    border-top: 1px solid black;
+    border-radius: 0;
+    width: initial;
+    padding: 40px 0 40px 0;
+    background-color: #fff;
+      
+}
+.menu__open__link{
+    font-size: 14px;
+    text-decoration: none;
+    font-style:italic;
+     padding-left:20px;
+}

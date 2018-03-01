@@ -1,0 +1,68 @@
+@import './main.sass';
+$dark: #0f1617;
+$blue: #395462;
+$lightblue: #7da1b1;
+$lightblue1: #cce0dd;
+$bordo: #701217;
+
+body{
+	margin:0;
+	padding:0;
+	font-family: "RobotoRegular";
+}
+
+.header__menu, .footer__menu{
+
+	&__item{
+		list-style-type: none;
+		display: inline-block;
+		padding:20px 40px;
+	
+		transition:1s;
+		
+
+		&:hover{
+			background-color: $lightblue;
+			transition:1s;
+		}
+	}
+	&__link{
+		text-decoration: none;
+		font-size:20px;
+		color:#701217;
+			transition:1s;
+		&:hover{
+			color:#fff;
+			transition:1s;
+		}
+	}
+
+}
+.galery__item{
+	margin-bottom:20px;
+	transition:2s;
+	& img{
+		width:500px;
+		transition:1s;
+		// &:hover{
+		// 	transform:scale(1.1);
+		// 	transition:1s;
+		// }
+	}
+}
+
+.content{
+	margin-top:30px;
+	margin-bottom:30px;
+	& p{
+		font-size: 16px;
+		& strong{
+			font-size:22px;
+		}
+	}
+}
+
+.scale{
+	transform:scale(0.8);
+	transition:2s;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+	.parent{
+		width:300px;
+		height:300px;
+		background:lightgreen;
+		border:1px dashed #000;
+		margin:30px;
+	}
+	input{
+		margin:10px;
+	}
+	input:not([type="checkbox"]){
+		display:block;
+	}
+	.modal{
+		position: fixed;
+		width: 200px;
+		height: 200px;
+		background-color: #fff;
+		box-shadow: 2px 2px 5px 10px rgba(0,0,0,0.5);
+		top:calc(50%-100px);
+		left:calc(50%-100px);
+		box-sizing: border-box;
+		padding:20px;
+		text-align:center;
+	}
+
+	#button2{
+
+	}
+</style>
+<button id="button">Click me! </button>
+
+<div class="parent">
+
+	<div class="child">
+
+	</div>
+</div>
+
+<form action="#">
+	<input type="text" name="" id="name">
+	<input type="password" name="" id="password">
+	<input type="checkbox" name="" id="checkbox">
+	<button> Send form </button>
+</form>
+
+
+<button id="button2">Click</button>
+
+<script src="js/jquery.min.js"></script>
+<script>
+// 	$('#button').click(function(){
+// 		console.log('i clicked!');
+// 	})
+
+// //mouseover mouseout
+// $('.parent').hover(function(){
+// 	console.log('MouseOver');
+// },
+// function(){
+// 	console.log('MouseOut');
+// });
+
+// $(document).ready(function(){
+// 	console.log('Mqqr');
+// })
+
+
+
+
+
+
+// $('[type=text]').focus(function(){
+// 	console.log('i\'m in focus');
+// });
+
+// $('[type=text]').blur(function(){
+// 	console.log('i\'m in blur');
+// });
+
+// $('[type=text]').change(function(){
+// 	console.log('i\'m in change');
+// });
+
+
+// $('form').submit(function(){
+// 	alert('i\'m in submit');
+// });
+
+// $('[type=text]').select(function(){
+// 	console.log('i\'m in select');
+// });
+
+// $('[type=text]').keyup(function(event){
+// 	console.log(event.keyCode);
+// });
+
+
+// $('[type=text]').keypress(function(event){
+// 	console.log(event.keyCode);
+// });
+
+
+
+
+
+// $('button').on('click', function(){
+// 	console.log('clicked by on');
+// });
+
+$('body').on('click','#button', function(){
+	console.log('clicked by on');
+});
+
+
+
+
+
+
+// var myDiv=document.createElement('div');
+// $(myDiv).addClass('modal');
+// // $('.modal').append(' <h2> My modal</h2><button>OK</button>');
+// // $('body').append($('.modal'));
+
+
+
+
+
+
+// function createModal(){
+
+// 	$('body').append('<h2>My modal</h2><button>OK</button>');
+// }
+// $('#button').click(createModal);
+// $('.modal>button').click(function(){
+// 	$('modal').remove();
+// });
+
+
+$('body').on('click', '.modal>button', function(){
+	console.log('modal removed');
+	$('.modal').remove();
+});
+
+
+// $('[type="text"]').keyup(function(){
+// 	console.log($(this).val());
+// 	if ($(this).val()==='modal') {
+		
+// 		$('button').trigger('click');
+// 	}
+
+// })
+
+// $('#button2').click(function(){
+// 	console.log('event added');
+// 	$('body').on('customEvent', function(){
+// 		console.log('my custom function');
+// 	});
+// });
+
+
+// $('#button1').click(function(){
+// $('body').trigger('customEvent');
+// });
+
+
+
+
+
+
+
+
+
+// $('input').each(function(){
+// 	console.log($(this).attr('type'));
+// });
+
+
+
+
+$('input').click(function(){
+$(this).attr('type', 'checkbox');
+});
+
+
+
+
+</script>
+
+
+</body>
+</html>

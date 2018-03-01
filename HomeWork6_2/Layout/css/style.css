@@ -1,0 +1,81 @@
+
+.container{
+    height:100vh;
+}
+
+.button1, .button2, .button3,.button4, .button5, .button6{
+    position:absolute;
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    transition: all 1s;
+}
+
+
+.button1, .button2, .button3{
+   top:5vh;
+   text-align: center;
+   transition:1s;
+   font-size: 16px;
+   padding-top:10%;
+}
+
+
+.button4, .button5, .button6{
+  background-color: #fff;
+   top:85vh;
+   transition:1s;
+}
+
+.button4:hover,
+.button5:hover,
+.button6:hover,
+label:hover{
+background-color: #C0C0C0;
+transition:1s;
+}
+
+
+
+.button4:hover + .button1 { 
+    transform:translateY(300px) rotate(45deg);
+    transition: 1s ;
+    border:1px solid #C0C0C0;
+    color:#C0C0C0;
+    font-weight: bold;
+
+}
+
+
+input[type="checkbox"]:checked ~  .button2 {
+  border:1px solid #C0C0C0;
+    color:#C0C0C0;
+    font-weight: bold;
+    transform:translateY(200px);
+    transition:1s;
+    transition-timing-function: linear;
+}
+
+label{
+  display: inline-block;
+  border:1px solid black;
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  top:85vh;
+  text-align:center;
+  font-weight: 100 !important;
+padding-top:10%;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.button6:active + .button3 { 
+    border:1px solid #C0C0C0;
+    color:#C0C0C0;
+    font-weight: bold;
+   transform:translateX(200px);
+}
+

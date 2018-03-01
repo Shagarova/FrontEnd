@@ -1,0 +1,83 @@
+
+.button1, .button2, .button3,.button4, .button5, .button6{
+    position:absolute;
+    width:100px;
+    height:100px;
+    border:1px solid black;
+     transition: all 1s 
+}
+
+
+.button1, .button2, .button3{
+   top:5vh;
+   text-align: center;
+   padding:auto;
+   font-size: 16px;
+}
+
+
+.button4, .button5, .button6{
+    background-color: #fff;
+   top:85vh;
+   transition:1s;
+}
+
+
+.container{
+    height:100vh;
+}
+.button4:hover,
+.button5:hover,
+.button-6:hover{
+background-color: #C0C0C0;
+transition:1s;
+}
+
+
+
+.button4:hover + .button1 { 
+    transform:translateY(300px) rotate(45deg);
+    transition: 1s ;
+    border:1px solid #C0C0C0;
+    color:#C0C0C0;
+    font-weight: bold;
+
+}
+/*.button5:active + .button2 { */
+
+input[type="checkbox"]:checked+label {
+  background: rgb(214,172,17);  
+}
+
+
+
+
+  .button5:hover + .button2{
+  
+      border:1px solid #C0C0C0;
+    color:#C0C0C0;
+    font-weight: bold;
+    animation-name:moveY;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+}
+.button6:active + .button3 { 
+      border:1px solid #C0C0C0;
+    color:#C0C0C0;
+    font-weight: bold;
+   transform:translateX(400px);
+}
+
+@keyframes moveY{
+100%{
+    transform:translateY(200px);
+}
+
+
+
+
+#toggle {
+  position: absolute;
+  left: -100%;
+  top: -100%;
+}

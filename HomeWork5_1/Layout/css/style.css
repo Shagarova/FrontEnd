@@ -1,0 +1,46 @@
+.accordeon{
+    background-color: #f6f6f6;
+    width: 40%;
+    margin:0 auto;
+    border-radius: 12px;
+    list-style-type: none;
+}
+
+
+.menu__item{ 
+border:1px solid black;   
+padding:20px 0px 20px 0px;
+    
+}
+.manu__item:active,
+.menu__item:hover,
+.menu__item:focus{
+    background-color: #48D1CC;
+
+}
+.menu__link{
+    font-size: 18px;
+    color: #3a3a3a;
+    padding-left:20px;
+  text-decoration: none;
+
+}
+.menu__open{
+  display: none;
+  /* margin-top:20px;*/
+    border-top: 1px solid black;
+    border-radius: 0;
+    width: initial;
+    padding: 40px 0 40px 0;
+    background-color: #fff;
+      
+}
+.menu__open__link{
+    font-size: 14px;
+    text-decoration: none;
+    font-style:italic;
+     padding-left:20px;
+}
+
+
+
